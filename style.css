@@ -831,3 +831,57 @@ header #menu-bar{
     z-index: -1;
     transition: 0.8s;
 }
+
+.datetime{
+    top: 0;
+    left: 14%;
+    position: inherit;
+    background: transparent;
+    font-family: "Segoe UI", sans-serif;
+    width: 440px;
+    padding: 10px 10px;
+    transition: 0.5s;
+  }
+  
+  .date{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  
+  .time{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  
+  .time span:last-child{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    body {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 300px) {
+    body {
+      font-size: 1.6rem;
+    }
+  }
