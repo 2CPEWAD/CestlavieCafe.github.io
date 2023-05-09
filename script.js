@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
 
     $(window).on('load scroll',function(){
-
+        
         $('#menu-bar').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
 
