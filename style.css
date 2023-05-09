@@ -101,8 +101,8 @@ header{
 }
 
 header .logo img{
-    height:50px;
-    width:50px;
+    height:70px;
+    width:70px;
 }
 
 header .navbar ul{
@@ -844,14 +844,14 @@ header #menu-bar{
   }
   
   .date{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     text-align: center;
     letter-spacing: 3px;
   }
   
   .time{
-    font-size: 35px;
+    font-size: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -866,7 +866,7 @@ header #menu-bar{
   }
   
   .time span:last-child{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 10px;
