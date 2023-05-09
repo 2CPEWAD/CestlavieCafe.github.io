@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>C'est la vie Café</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\evvin\Documents\WAD\WAD\Logo.ico"/>
+
+    <!-- aos css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+<body onload="updateClock()">
+
+<audio autoplay loop>
+    <source src="trial.mp3" type="audio/mp3">
+</audio>
+
+
+
+<!-- header section starts  -->
+
+<header>
+    
+    <a href="#" class="logo"><img src="Logo.jpg" alt=""></a>
+    <div id="menu-bar">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+    <nav class="navbar">
+            
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+        
+    </nav>
+    
+</header>
+<!-- header section ends -->
+<div id="myModal" style="display: none;">
+    <!-- Popup content goes here -->
+  </div>
+<!-- home section starts  -->
+
+<section  class="home" id="home">
+
+    <!--DATE/TIME starts -->
+    <div class="datetime" >
+        <div class="date">
+            <span id="dayname">Day</span>,
+            <span id="month">Month</span>
+            <span id="daynum">00</span>,
+            <span id="year">Year</span>
+        </div>
+        <div class="time">
+            <span id="hour">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+        </div>
+    </div>
+<!--DATE/TIME ends -->
+
+    <div class="content" data-aos="fade-right">
+        <h3>Bon appetit! Delight your senses at our French Cafe.</h3>
+        <p>From the oven to your table, <br> we put love and care in every pastry.</p>
+        <a href="#"><button class="btn">explore</button></a>
+    </div>
+
+    <div class="image" data-aos="fade-up"></div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image" data-aos="fade-right"></div>
+
+    <div class="content" data-aos="fade-left">
+        <h3>ABOUT US</h3>
+        
+        <p>Welcome to C'est la vie Café, where we specialize in serving up smiles and caffeine. 
+            We are a small but powerful group of coffee lovers who think that a good cup of 
+            coffee can brighten anyone's day.</p>
+        <a href="#"><button class="btn">learn more</button></a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<section class="menu" id="menu">
+
+<h1 class="heading"> Our Delicious <span>Coffee</span> </h1>
+
+<ul class="list" data-aos="fade-down">
+    <li class="btn" data-src="coffeemenu1.jpg">Espresso</li>
+    <li class="btn" data-src="coffeemenu2.jpg">Cappuccino</li>
+    <li class="btn" data-src="coffeemenu3.jpg">Café Au Lait</li>
+    <li class="btn" data-src="coffeemenu4.jpg">Crème Brûlée Frappe</li>
+    <li class="btn" data-src="coffeemenu5.jpg">Dark Mocha Frappe</li>
+    <li class="btn" data-src="coffeemenu6.jpg">French Vanilla Latte</li>
+    <li class="btn" data-src="coffeemenu7.jpg">Caramel Macchiato Latte</li>
+    <li class="btn" data-src="coffeemenu8.jpeg">Salted Maple Latte</li>
+    <li class="btn" data-src="coffeemenu9.jpg">White Chocolate Frappe</li>
+</ul>
+
+
+
+<div class="row" data-aos="fade-right">
+
+    <div class="image" data-aos="fade-left">
+        <img src="coffeemenu1.jpg" id="menu-img" alt="">
+    </div>
+
+    <div class="content">
+        <div class="info">
+            <h3> <span>01.</span> Espresso <p>(Hot/Iced)</p> </h3>
+            <p>Small: P170 Medium: P185 Large: P200</p>
+        </div>
+        <div class="info">
+            <h3> <span>02.</span> Cappuccino <p>(Hot/Iced)</p> </h3>
+            <p>Small: P180 Medium: P195 Large: P210</p>
+        </div>
+        <div class="info">
+            <h3> <span>03.</span> Café Au Lait <p>(Hot/Iced)</p> </h3>
+            <p>Small: P180 Medium: P195 Large: P210 </p>
+            
+        </div>
+        
+        <div class="info">
+            <h3> <span>04.</span> French Vanilla Latte <p>(Hot/Iced)</p> </h3>
+            <p>Small: P180 Medium: P195 Large: P210</p>
+            
+        </div>
+        <div class="info">
+            <h3> <span>05.</span> Caramel Macchiato Latte <p>(Hot/Iced)</p> </h3>
+            <p>Small: P180 Medium: P195 Large: P210</p>
+            
+        </div>
+        <div class="info">
+            <h3> <span>06.</span> Salted Maple Latte <p>(Hot/Iced)</p> </h3>
+            <p>Small: P180 Medium: P195 Large: P210</p>
+            
+        </div>
+        <div class="info">
+            <h3> <span>07.</span> White Chocolate Frappe </h3>
+            <p>Small: P180 Medium: P195 Large: P210</p>
+            
+        </div>
+        <div class="info">
+            <h3> <span>08.</span> Crème Brûlée Frappe </h3>
+            <p>Small: P180 Medium: P195 Large: P210</p>
+            
+        </div>
+        <div class="info">
+            <h3> <span>09.</span> Dark Mocha Frappe </h3>
+            <p>Small: P180 Medium: P195 Large: P210</p>
+            
+        </div>
+        
+    </div>
+
+</div>
+</section>
+
+<section class="pastrymenu" id="pastrymenu">
+<h1 class="heading"> Our Delicious <span>Pastry</span> </h1>
+
+<ul class="pastrylist" data-aos="fade-down">
+    <li class="pastrybtn" data-src="pastrymenu1.jpg">Creampuff </li>
+    <li class="pastrybtn" data-src="pastrymenu2.jpg">Paris-Brest</li>
+    <li class="pastrybtn" data-src="pastrymenu3.jpg">Coffee Eclair</li>
+    <li class="pastrybtn" data-src="pastrymenu4.jpg">Brioche Bun</li>
+    <li class="pastrybtn" data-src="pastrymenu5.jpg">Pain Au Chocolate</li>
+    <li class="pastrybtn" data-src="pastrymenu6.jpg">Croissant</li>
+    <li class="pastrybtn" data-src="pastrymenu7.jpg">Fraisier Elderflower</li>
+    <li class="pastrybtn" data-src="pastrymenu8.jpg">Tropical Fruit Tart</li>
+    <li class="pastrybtn" data-src="pastrymenu9.jpg">Raspberry Mille Feuille</li>
+</ul>
+
+
+
+<div class="pastryrow" data-aos="fade-right">
+
+    <div class="pastryimage" data-aos="fade-left">
+        <img src="pastrymenu1.jpg" id="menu-img" alt="">
+    </div>
+
+    <div class="pastrycontent">
+        <div class="pastryinfo">
+            <h3> <span>01.</span> Creampuff </h3>
+            <p>P65</p>
+            
+        </div>
+        <div class="pastryinfo">
+            <h3> <span>02.</span> Paris-Brest </h3>
+            <p>P135</p>
+            
+        </div>
+        <div class="pastryinfo">
+            <h3> <span>03.</span> Coffee Eclair </h3>
+            <p>P120</p>
+            
+        </div>
+        <div class="pastryinfo">
+            <h3> <span>04.</span> Brioche Bun </h3>
+            <p>P95</p>
+            
+        </div>
+        <div class="pastryinfo">
+            <h3> <span>05.</span> Pain Au Chocolate </h3>
+            <p>P95</p>
+            
+        </div>
+        <div class="pastryinfo">
+            <h3> <span>06.</span> Croissant </h3>
+            <p>P115</p>
+            
+        </div>
+        <div class="pastryinfo">
+            <h3> <span>07.</span> Fraisier Elderflower </h3>
+            <p>P230</p>
+            
+        </div>
+        <div class="pastryinfo">
+            <h3> <span>08.</span> Tropical Fruit Tart </h3>
+            <p>P245</p>
+            
+        </div>
+        <div class="pastryinfo">
+            <h3> <span>09.</span> Raspberry Mille Feuille </h3>
+            <p>P265</p>
+            
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- popular section starts  -->
+
+<section class="popular" id="popular">
+
+<h1 class="heading"> Most <span>popular</span> foods </h1>
+
+<div class="box-container">
+
+    <div class="box" data-aos="fade-right">
+        <img src="coffeemenu1.jpg" alt="">
+        <h3>Espresso <p>(Hot/Iced)</p></h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>      
+        </div>
+        
+        <div class="price">Small: P170</div>
+        <div class="price">Medium: P185</div>
+        <div class="price">Large: P200</div>
+        <a href="#"><button class="btn">add to cart</button></a>
+    </div>
+
+    <div class="box" data-aos="fade-left">
+        <img src="coffeemenu4.jpg" alt="">
+        <h3>Crème Brûlée Frappe</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>   
+        </div>
+        <div class="price">Small: P170</div>
+        <div class="price">Medium: P185</div>
+        <div class="price">Large: P200</div>
+        <a href="#"><button class="btn">add to cart</button></a>
+    </div>
+
+    <div class="box" data-aos="fade-right">
+        <img src="coffeemenu5.jpg" alt="">
+        <h3>Dark Mocha Frappe</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>   
+        </div>
+        <div class="price">Small: P170</div>
+        <div class="price">Medium: P185</div>
+        <div class="price">Large: P200</div>
+        <a href="#"><button class="btn">add to cart</button></a>
+    </div>
+
+    <div class="box" data-aos="fade-left">
+        <img src="coffeemenu8.jpeg" alt="">
+        <h3>Salted Maple Latte</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>   
+        </div>
+        <div class="price">Small: P170</div>
+        <div class="price">Medium: P185</div>
+        <div class="price">Large: P200</div>
+        <a href="#"><button class="btn">add to cart</button></a>
+    </div>
+
+    <div class="box" data-aos="fade-left">
+        <img src="pastrymenu3.jpg" alt="">
+        <h3>Coffee Eclair</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>   
+        </div>
+        <div class="price">P120</div>
+        <a href="#"><button class="btn">add to cart</button></a>
+    </div>
+    <div class="box" data-aos="fade-right">
+        <img src="pastrymenu6.jpg" alt="">
+        <h3>Croissant</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>   
+        </div>
+        <div class="price">P115</div>
+        <a href="#"><button class="btn">add to cart</button></a>
+    </div>
+
+    <div class="box" data-aos="fade-left">
+        <img src="pastrymenu7.jpg" alt="">
+        <h3>Fraisier Elderflower</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>   
+        </div>
+        <div class="price">P230</div>
+        <a href="#"><button class="btn">add to cart</button></a>
+    </div>
+    <div class="box" data-aos="fade-left">
+        <img src="pastrymenu8.jpg" alt="">
+        <h3>Tropical Fruit Tart</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>   
+        </div>
+        <div class="price">Small P245</div>
+        <a href="#"><button class="btn">add to cart</button></a>
+    </div>
+
+</div>
+
+</section>
+
+<!-- popular section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+<h1 class="heading"> our food <span>gallery</span> </h1>
+
+<div class= "video-container">
+    <div class ="box">
+        <video src="Video1.mp4" type="video/mp4" loop class="clip"></video> 
+    </div>
+    <div class ="box">
+        <video src="Video2.mp4" type="video/mp4" loop class="clip"></video> 
+    </div>
+    <div class ="box">
+        <video src="Video3.mp4" type="video/mp4" loop class="clip"></video> 
+    </div>
+</div>
+        
+</div> 
+
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+<h1 class="heading"> make an <span>order</span> </h1>
+
+<div class="row">
+
+    <form action="" data-aos="fade-right">
+        <input type="text" placeholder="your Order" class="box" id="myInput">
+        <input type="text" placeholder="your name" class="box" id="myInput">
+        <input type="email" placeholder="your email" class="box" id="myInput">
+        <input type="password" placeholder="your password" class="box" id="myInput">
+        <input type="number" placeholder="your number" class="box" id="myInput">
+        <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address" id="myInput"></textarea>
+        <button onclick="text();" class="btn" onclick="document.getElementById('myInput').value = ''">Order Now</button> 
+    </form>
+
+    <div class="image" data-aos="fade-left">
+        <img src="Form.jpg" alt="">
+    </div>
+
+</div>
+
+</section>
+
+<!-- order section ends -->
+
+<!--service section starts-->
+<section class="service" id="service">
+    <h1>Our <span> Services</span></h1>
+    <div class="row">
+        <div class="box">
+            <i class="fas fa-award"></i>
+            <h3>FRESHLY SOURCED INGRIDIENTS</h3>
+            <p>Everything we serve is made fresh daily with superior ingridients sourced globally.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-apple-alt"></i>
+            <h3>AUTHENTICALLY FRENCH</h3>
+            <p>Our breads and pastries are crafted using French baking techniques that your taste buds will never forget us.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>PRICES FOR EVERYONE</h3>
+            <p>We believe in affordability, our hot beverages and pastries are carefully priced to not break the bank.</p>
+        </div>
+            
+            <div class="box">
+            <i class="fas fa-undo"></i>
+            <h3>DELIEVERY</h3>
+            <p>Avoid the lines and have the taste of France, right at your doorstep.</p>
+        </div>
+    </div>
+</section>
+<!--service section ends-->
+
+
+<!-- footer section starts  -->
+<footer>
+<div class="footer">
+    <div class="box-container">
+
+        <div class="box" id="contact">
+            <h3>Contact Info</h3>
+            <p> <i class="fas fa-map-marker-alt"></i> Pililla, Rizal, Philippines </p>
+            <p> <i class="fas fa-envelope"></i> Cafe@gmail.com </p>
+            <p> <i class="fas fa-phone"></i> +6390415998 </p>
+            <p> <i class="fas fa-phone"></i> +6390211445 </p>
+        </div>
+
+        <div class="box">
+            <h3>Branch Location</h3>
+            <a href="#">Pililla</a>
+            <a href="#">ANGONOOOOOOOO (MAIN BRANCH)</a>
+            <a href="#">Morong</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links </h3>
+            <a href="#">About</a>
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Help</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow Us</h3>
+            <ul class="sci"> 
+                <li><a href="#"><i class="fab fa-facebook" ></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="mailto:cafe@gmail.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>          
+        </div>
+        
+    <h1 class="credit">©2023 <span>C'est la vie Café</span> Corporation. All rights reserved. </h1>
+    </div>
+</div>
+</footer>
+
+
+<!-- aos js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+<!-- initializing aos  -->
+<script>
+    function text(){
+        alert("Thanks for your order!");
+
+    }
+
+    </script>
+
+
+<script>
+    const clip = document.querySelectorAll('.clip');
+    for (let i = 0; i<clip.length; i++){
+        clip[i].addEventListener('mouseenter', function(e){ clip[i].play()
+        })
+        clip[i].addEventListener('mouseout', function(e){ clip[i].pause()
+        })
+    }
+    </script>
+
+
+<script>
+    AOS.init({
+        delay:400,
+        duration:1000
+    })
+
+</script>
+
+<script>
+    function updateClock(){
+        var now = new Date();
+        var dayname = now.getDay(),
+            mo = now.getMonth(),
+            daynum = now.getDate(),
+            yr = now.getFullYear(),
+            hou = now.getHours(),
+            min = now.getMinutes(),
+            sec = now.getSeconds(),
+            pe = "AM";
+            
+            if(hou >= 12){
+                pe = "PM";
+            }
+            if(hou == 0){
+             hou = 12;
+            }
+            if(hou > 12){
+                hou = hou - 12;
+            }
+
+            Number.prototype.pad = function(digits){
+                for(var n = this.toString(); n.length<digits; n=0+n);
+                return n;
+            }
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
+            var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+            var values = [week[dayname],months[mo], daynum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+            for(var i = 0; i < ids.length; i++)
+            document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    }
+
+    function initClock(){
+        updateClock();
+        window.setInterval("updateClock()", 1);
+    }
+
+
+</script>
+</body>
+</html>
